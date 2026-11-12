@@ -5,28 +5,49 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Book trusted Vedic priests and authentic pooja services with PoojaConnect. Verified pandits, pure samagri, and stress-free ceremony planning.">
   <title>Home1 | PoojaConnect</title>
-  <link rel="icon" href="assets/images/brass-diya-close.jpg" type="image/jpeg">
+  <!-- Dedicated Sacred Diya Favicon (Point 1) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- HEADER & TOPBAR (Points 2, 3, 18, 19) -->
   <header class="topbar">
     <div class="container nav">
-      <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
+      <!-- Brand Logo - Avoid Tamil, using Universal Devanagari Om & Name (Point 2) -->
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ॐ</span>
+        <span>PoojaConnect</span>
+      </a>
+
+      <!-- Centered Navigation Links (Point 3) - Removed Login (Point 19) -->
       <nav class="navlinks">
         <a class="active" href="index.html">Home1</a>
-        <a class="" href="home2.html">Home2</a>
-        <a class="" href="priests.html">Priests</a>
-        <a class="" href="poojas.html">Poojas</a>
-        <a class="" href="about.html">About</a>
-        <a class="" href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
+        <a href="home2.html">Home2</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="priests.html">Priests</a>
+        <a href="poojas.html">Poojas</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Mobile Menu Actions: Theme, RTL, Sign Up Inside Menu Drawer (Point 18) -->
+        <div class="mobile-nav-actions">
+          <div class="mobile-nav-actions-row">
+            <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+            <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+          </div>
+          <a class="btn-nav-primary" href="signup.html">Sign up</a>
+        </div>
       </nav>
+
+      <!-- Desktop Nav Actions (Equal Height 42px) (Point 3) -->
       <div class="nav-actions">
         <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
         <button class="icon-btn" data-theme-toggle>☾ Theme</button>
-        <a class="btn" href="signup.html">Sign up</a>
-        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <a class="btn-nav-primary" href="signup.html">Sign up</a>
       </div>
+
+      <!-- Hamburger Button (Point 18) -->
+      <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
     </div>
   </header>
 
@@ -38,14 +59,19 @@
           <span class="eyebrow">✦ SACRED MOMENTS, SIMPLIFIED</span>
           <h1>Bring home the <em>blessings</em> of tradition.</h1>
           <p class="lead">Find experienced Vedic priests, plan meaningful ceremonies, and celebrate every milestone with authentic rituals and complete peace of mind.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+          
+          <!-- Single line buttons on mobile for Home 1 (Point 22) -->
+          <div class="hero-btn-group">
             <a class="btn" href="priests.html">Find a Priest →</a>
             <a class="btn secondary" href="poojas.html">Explore Poojas</a>
           </div>
-          <p class="muted" style="margin-top:25px">✓ 150+ Verified Veda Pandits &nbsp; ✓ Complete Samagri Included &nbsp; ✓ 100% Shastra Compliant</p>
+
+          <p class="muted" style="margin-top:24px;font-size:0.9rem">
+            ✓ 150+ Verified Veda Pandits &nbsp; ✓ Complete Samagri Included &nbsp; ✓ 100% Shastra Compliant
+          </p>
         </div>
         <div class="hero-art">
-          <img src="assets/images/hero-temple.jpg" alt="Majestic traditional Indian temple gopuram at sunset">
+          <img src="assets/images/hero-temple.jpg" alt="Traditional Indian temple gopuram at golden sunset">
           <div class="float-card">
             <strong>✦ 10,000+ Ceremonies Performed</strong>
             <span class="muted">Authentic traditions, handled with reverence</span>
@@ -76,7 +102,7 @@
       </div>
     </div>
 
-    <!-- CORE POOJA SERVICES WITH REALISTIC IMAGERY -->
+    <!-- CORE POOJA SERVICES WITH RELEVANT REALISTIC IMAGES (Point 4) -->
     <section class="section alt" style="margin-top:40px">
       <div class="container">
         <div class="section-head">
@@ -94,7 +120,7 @@
               <span class="tag">HOME BLESSING</span>
               <h3>Griha Pravesham</h3>
               <p class="muted">Step into your new home with Vastu Shanti, Navagraha Homam, and traditional milk boiling rituals.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹3,500</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -102,12 +128,12 @@
           </article>
 
           <article class="card">
-            <img src="assets/images/satyanarayan-pooja.jpg" alt="Authentic devotional Satyanarayan pooja setup with flowers and lamps">
+            <img src="assets/images/satyanarayan-pooja.jpg" alt="Devotional Satyanarayan pooja setup with flowers and lamps">
             <div class="card-body">
               <span class="tag">FAMILY & DEVOTION</span>
               <h3>Satyanarayan Pooja</h3>
               <p class="muted">Invite prosperity, peace, and divine gratitude into your home with sacred katha and prasadam.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹2,500</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -120,7 +146,7 @@
               <span class="tag">AUSPICIOUS BEGINNING</span>
               <h3>Ganapathi Homam</h3>
               <p class="muted">Remove obstacles and welcome positive energy before launching new ventures or undertakings.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹3,000</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -133,7 +159,7 @@
               <span class="tag">LIFE MILESTONE</span>
               <h3>Naming Ceremony (Namakaran)</h3>
               <p class="muted">Bless your newborn with Vedic chants, cradle rituals, and astrological muhurtham blessings.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹2,200</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -146,7 +172,7 @@
               <span class="tag">HEALTH & LONGEVITY</span>
               <h3>Ayushya Homam</h3>
               <p class="muted">A powerful Vedic fire ceremony praying for health, vitality, long life, and spiritual protection.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹3,200</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -159,7 +185,7 @@
               <span class="tag">SACRED UNION</span>
               <h3>Vivaha Samskara (Wedding)</h3>
               <p class="muted">Experienced pandits guiding the couple through Saptapadi, Mangalsutra dharanam, and Agni rituals.</p>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
                 <span class="price">From ₹8,500</span>
                 <a class="btn light" href="booking.html">Book this pooja</a>
               </div>
@@ -169,7 +195,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: SACRED RITUALS VISUAL GALLERY -->
+    <!-- SACRED RITUALS VISUAL GALLERY (Points 4, 21, 23) -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -222,7 +248,7 @@
             <div class="gallery-overlay">
               <span class="tag">ACHARYA GUIDANCE</span>
               <h3>Mantra Chanting & Archana</h3>
-              <p>Chanted with precise Sanskrit intonation and pure bhavana.</p>
+              <p>Chanted with precise Sanskrit intonation and pure devotion.</p>
             </div>
           </div>
 
@@ -238,7 +264,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: HOW POOJACONNECT WORKS WITH VISUAL STEP CARDS -->
+    <!-- HOW POOJACONNECT WORKS -->
     <section class="section alt">
       <div class="container">
         <div class="section-head">
@@ -259,7 +285,7 @@
           </div>
 
           <div class="step-card">
-            <img src="assets/images/priest-2.jpg" alt="Vedic priest profile verification">
+            <img src="assets/images/priest-vedic.jpg" alt="Vedic priest profile verification">
             <div class="step-body">
               <span class="step-num">2</span>
               <h3>Matched with Veda Pandit</h3>
@@ -288,7 +314,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: FEATURED VERIFIED PRIESTS -->
+    <!-- FEATURED VERIFIED PRIESTS (Points 4, 12) -->
     <section class="section">
       <div class="container">
         <div class="section-head">
@@ -302,7 +328,7 @@
         <div class="priest-grid">
           <article class="priest-card">
             <div class="priest-thumb-wrap">
-              <img src="assets/images/priest-1.jpg" alt="Pandit Raghavan Sharma in traditional attire">
+              <img src="assets/images/priest-vedic.jpg" alt="Pandit Raghavan Sharma in traditional attire">
               <span class="priest-badge">★ 4.95 (180+ Poojas)</span>
             </div>
             <div class="priest-body">
@@ -317,7 +343,7 @@
               </div>
               <div class="priest-footer">
                 <div>
-                  <span class="muted" style="font-size:.8rem;display:block">Dakshina</span>
+                  <span class="muted" style="font-size:0.8rem;display:block">Dakshina</span>
                   <span class="price">From ₹2,500</span>
                 </div>
                 <a class="btn light" href="booking.html">Request Booking</a>
@@ -341,7 +367,7 @@
               </div>
               <div class="priest-footer">
                 <div>
-                  <span class="muted" style="font-size:.8rem;display:block">Dakshina</span>
+                  <span class="muted" style="font-size:0.8rem;display:block">Dakshina</span>
                   <span class="price">From ₹3,000</span>
                 </div>
                 <a class="btn light" href="booking.html">Request Booking</a>
@@ -365,7 +391,7 @@
               </div>
               <div class="priest-footer">
                 <div>
-                  <span class="muted" style="font-size:.8rem;display:block">Dakshina</span>
+                  <span class="muted" style="font-size:0.8rem;display:block">Dakshina</span>
                   <span class="price">From ₹2,000</span>
                 </div>
                 <a class="btn light" href="booking.html">Request Booking</a>
@@ -376,44 +402,20 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: PURE SAMAGRI & REVERENCE BANNER -->
+    <!-- PURE SAMAGRI BANNER -->
     <section class="section alt">
       <div class="container">
-        <div class="samagri-banner">
-          <img src="assets/images/samagri-kit.jpg" alt="Auspicious brass lamps and complete pure puja samagri kit">
-          <div class="samagri-content">
+        <div class="grid-two" style="background:var(--surface);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)">
+          <img src="assets/images/samagri-kit.jpg" alt="Auspicious brass lamps and complete pure puja samagri kit" style="width:100%;height:100%;min-height:360px;object-fit:cover">
+          <div style="padding:40px">
             <span class="tag">100% PURE & AUTHENTIC</span>
-            <h2>Pure Pooja Samagri, delivered with reverence</h2>
+            <h2 style="margin:10px 0 14px">Pure Pooja Samagri, delivered with reverence</h2>
             <p class="muted">No need to spend hours wandering through markets. We prepare complete, shastra-approved samagri kits sourced directly from traditional heritage vendors.</p>
-            <ul class="check-list">
-              <li>
-                <span class="check-icon">✓</span>
-                <div>
-                  <strong>Pure A2 Desi Cow Ghee:</strong>
-                  <span class="muted"> For sacred homam offerings and glowing deepas.</span>
-                </div>
-              </li>
-              <li>
-                <span class="check-icon">✓</span>
-                <div>
-                  <strong>Authentic Havan Herbs & Samit:</strong>
-                  <span class="muted"> Navagraha sticks, bilva patra, camphor, and pure chandan.</span>
-                </div>
-              </li>
-              <li>
-                <span class="check-icon">✓</span>
-                <div>
-                  <strong>Fresh Pooja Flowers & Mango Leaves:</strong>
-                  <span class="muted"> Packed fresh on the morning of your ceremony.</span>
-                </div>
-              </li>
-              <li>
-                <span class="check-icon">✓</span>
-                <div>
-                  <strong>Pre-Ceremony Preparation Guide:</strong>
-                  <span class="muted"> Clear checklist for family items like fruits, coconut, and thali.</span>
-                </div>
-              </li>
+            <ul class="muted" style="line-height:1.9;margin:18px 0 24px;padding-left:18px">
+              <li><strong>Pure A2 Desi Cow Ghee:</strong> For sacred homam offerings and glowing deepas.</li>
+              <li><strong>Authentic Havan Herbs & Samit:</strong> Navagraha sticks, bilva patra, camphor, and chandan.</li>
+              <li><strong>Fresh Flowers & Mango Leaves:</strong> Packed fresh on the morning of your ceremony.</li>
+              <li><strong>Pre-Ceremony Guide:</strong> Clear checklist for coconuts, fruits, and thali readiness.</li>
             </ul>
             <a class="btn" href="booking.html">Plan ceremony with samagri →</a>
           </div>
@@ -424,12 +426,10 @@
     <!-- WHY POOJACONNECT -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">THE POOJACONNECT PROMISE</span>
-            <h2>Why families trust our platform</h2>
-            <p class="muted">Built with profound respect for age-old traditions and modern punctuality.</p>
-          </div>
+        <div class="section-head center">
+          <span class="tag">THE POOJACONNECT PROMISE</span>
+          <h2>Why families trust our platform</h2>
+          <p class="muted">Built with profound respect for age-old traditions and modern punctuality.</p>
         </div>
         <div class="features">
           <div class="feature">
@@ -451,55 +451,53 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: DEVOTEE TESTIMONIALS -->
+    <!-- DEVOTEE TESTIMONIALS (Points 21, 23) -->
     <section class="section alt">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">DEVOTEE EXPERIENCES</span>
-            <h2>Cherished memories from real families</h2>
-            <p class="muted">Hear what devotees have to say about celebrating their milestones with PoojaConnect.</p>
-          </div>
+        <div class="section-head center">
+          <span class="tag">DEVOTEE EXPERIENCES</span>
+          <h2>Cherished memories from real families</h2>
+          <p class="muted">Hear what devotees have to say about celebrating their milestones with PoojaConnect.</p>
         </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"We arranged our Griha Pravesham through PoojaConnect. Pandit Raghavan Sharma explained every step in Tamil and English so our children could appreciate the rituals. Truly an uplifting experience."</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family1.jpg" alt="Suresh & Radhika Sundaram">
+        <div class="cards">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "We arranged our Griha Pravesham through PoojaConnect. Pandit Raghavan Sharma explained every step in Tamil and English so our children could appreciate the rituals. Truly an uplifting experience."
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family1.jpg" alt="Suresh & Radhika Sundaram" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Suresh & Radhika Sundaram</div>
-                <div class="devotee-ceremony">Griha Pravesham · Bengaluru</div>
+                <strong style="display:block;font-size:0.92rem">Suresh & Radhika Sundaram</strong>
+                <span class="muted" style="font-size:0.8rem">Griha Pravesham · Bengaluru</span>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"The Satyanarayan Pooja was arranged so beautifully. The samagri kit included everything from pure cow ghee to fresh mango leaves. Our panditji was so patient and chanted mantras with immense devotion."</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family2.jpg" alt="Ananya & Kartik Iyer">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "The Satyanarayan Pooja was arranged so beautifully. The samagri kit included everything from pure cow ghee to fresh mango leaves. Our panditji was so patient and chanted mantras with immense devotion."
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family2.jpg" alt="Ananya & Kartik Iyer" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Ananya & Kartik Iyer</div>
-                <div class="devotee-ceremony">Satyanarayan Pooja · Chennai</div>
+                <strong style="display:block;font-size:0.92rem">Ananya & Kartik Iyer</strong>
+                <span class="muted" style="font-size:0.8rem">Satyanarayan Pooja · Chennai</span>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"Finding an experienced Telugu priest for our son's Namakaran was so quick. Acharya Vidyanand Shastri ji arrived 20 minutes prior and set up the altar flawlessly. Highly recommended!"</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family3.jpg" alt="Venkatesh & Sravanti Rao">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "Finding an experienced Telugu priest for our son's Namakaran was so quick. Acharya Vidyanand Shastri ji arrived 20 minutes prior and set up the altar flawlessly. Highly recommended!"
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family3.jpg" alt="Venkatesh & Sravanti Rao" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Venkatesh & Sravanti Rao</div>
-                <div class="devotee-ceremony">Naming Ceremony · Hyderabad</div>
+                <strong style="display:block;font-size:0.92rem">Venkatesh & Sravanti Rao</strong>
+                <span class="muted" style="font-size:0.8rem">Naming Ceremony · Hyderabad</span>
               </div>
             </div>
           </div>
@@ -507,60 +505,114 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: FREQUENTLY ASKED QUESTIONS -->
+    <!-- NEW INTERACTIVE DROPDOWN FAQ SECTION (Point 5) -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">FREQUENTLY ASKED</span>
-            <h2>Common questions about booking a pooja</h2>
-            <p class="muted">Clear answers to help you plan your ceremony with clarity.</p>
-          </div>
+        <div class="section-head center">
+          <span class="tag">FREQUENTLY ASKED</span>
+          <h2>Common questions about booking a pooja</h2>
+          <p class="muted">Click to expand any question and explore clear answers to help you plan with confidence.</p>
         </div>
-        <div class="faq-grid">
-          <div class="faq-card">
-            <h4><span>🪔</span> What is included in the pooja package?</h4>
-            <p>Our standard booking includes verified priest dakshina, ritual coordination, and guidance. You can also opt for our "All-Inclusive Samagri" add-on which provides pure ghee, flowers, havan samit, and puja essentials.</p>
-          </div>
 
-          <div class="faq-card">
-            <h4><span>📅</span> Can the priest help calculate the auspicious Muhurtham?</h4>
-            <p>Yes. When submitting your booking request, simply mention that you need muhurtham guidance. Our senior astrologer acharyas will review your Janma Nakshatra and propose the most auspicious timings.</p>
-          </div>
+        <div class="faq-accordion">
+          <!-- FAQ 1 (Default Open) -->
+          <details class="faq-dropdown" open>
+            <summary class="faq-summary">
+              <div class="faq-icon-title">
+                <span class="q-icon">🪔</span>
+                <span>What is included in the pooja package?</span>
+              </div>
+              <span class="faq-chevron">+</span>
+            </summary>
+            <div class="faq-content">
+              Our standard booking includes verified priest dakshina, ritual coordination, and pre-ceremony guidance. You can also opt for our "All-Inclusive Samagri" add-on which provides pure A2 cow ghee, fresh flowers, havan samit, camphor, and brass puja essentials delivered right to your home.
+            </div>
+          </details>
 
-          <div class="faq-card">
-            <h4><span>🗣️</span> Can I choose a priest based on my mother tongue?</h4>
-            <p>Absolutely. We have pandits proficient in Tamil, Telugu, Kannada, Hindi, Marathi, Gujarati, and Sanskrit to ensure your family fully understands the meaning of the rituals.</p>
-          </div>
+          <!-- FAQ 2 -->
+          <details class="faq-dropdown">
+            <summary class="faq-summary">
+              <div class="faq-icon-title">
+                <span class="q-icon">📅</span>
+                <span>Can the priest help calculate the auspicious Muhurtham?</span>
+              </div>
+              <span class="faq-chevron">+</span>
+            </summary>
+            <div class="faq-content">
+              Yes, absolutely. When submitting your booking request, simply mention that you need muhurtham guidance. Our senior astrologer acharyas will review your Janma Nakshatra and propose the most auspicious timings based on the Panchangam.
+            </div>
+          </details>
 
-          <div class="faq-card">
-            <h4><span>🏡</span> Do you support ceremonies at venues or only at home?</h4>
-            <p>We perform rituals at private homes, apartments, community halls, temple venues, and corporate offices. Just provide the venue address during checkout.</p>
-          </div>
+          <!-- FAQ 3 -->
+          <details class="faq-dropdown">
+            <summary class="faq-summary">
+              <div class="faq-icon-title">
+                <span class="q-icon">🗣️</span>
+                <span>Can I choose a priest based on my regional mother tongue?</span>
+              </div>
+              <span class="faq-chevron">+</span>
+            </summary>
+            <div class="faq-content">
+              Yes. We have certified pandits proficient in Tamil, Telugu, Kannada, Hindi, Marathi, Gujarati, and Sanskrit to ensure your family fully understands the meaning and significance of the sacred mantras.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-dropdown">
+            <summary class="faq-summary">
+              <div class="faq-icon-title">
+                <span class="q-icon">🏡</span>
+                <span>Do you perform ceremonies at private venues or only at home?</span>
+              </div>
+              <span class="faq-chevron">+</span>
+            </summary>
+            <div class="faq-content">
+              We perform rituals at private residences, apartments, community halls, marriage venues, temple premises, and commercial offices. Simply share your venue address when confirming your booking.
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-dropdown">
+            <summary class="faq-summary">
+              <div class="faq-icon-title">
+                <span class="q-icon">🔄</span>
+                <span>What if I need to reschedule due to unforeseen circumstances?</span>
+              </div>
+              <span class="faq-chevron">+</span>
+            </summary>
+            <div class="faq-content">
+              We understand family schedules change. You can reschedule your ceremony free of charge up to 24 hours prior to the muhurtham date directly from your Devotee Dashboard or by calling our coordinator helpline.
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- CALL TO ACTION SECTION -->
+    <!-- CENTERED CTA SECTION WITH BUTTON BELOW IN ALL THREE DEVICES (Points 20, 21) -->
     <section class="section">
       <div class="container">
         <div class="cta">
-          <div>
+          <div class="cta-content">
             <h2>Ready to plan your sacred occasion?</h2>
-            <p>Share your ceremony details with us. We'll connect you with the ideal priest for your family tradition.</p>
+            <p>Share your ceremony details with us. We'll connect you with the ideal certified priest for your family tradition.</p>
           </div>
-          <a class="btn light" href="booking.html">Start booking now →</a>
+          <a class="btn" href="booking.html">Start booking now →</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP (Point 6) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
-          <p class="muted">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
+          <a class="logo" href="index.html">
+            <span class="logo-mark">ॐ</span>
+            <span>PoojaConnect</span>
+          </a>
+          <p class="muted">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional Vedic rituals.</p>
+          <!-- Social Media with Smooth Hover (Points 6, 15) -->
           <div class="socials">
             <a href="https://instagram.com" aria-label="Instagram">◎</a>
             <a href="https://facebook.com" aria-label="Facebook">f</a>
@@ -569,21 +621,39 @@
           </div>
         </div>
         <div>
+          <h4>Sacred Ceremonies</h4>
+          <a href="poojas.html">Griha Pravesham</a>
+          <a href="poojas.html">Satyanarayan Pooja</a>
+          <a href="poojas.html">Ganapathi Homam</a>
+          <a href="poojas.html">Vivaha Samskara</a>
+          <a href="poojas.html">Ayushya Homam</a>
+        </div>
+        <div>
           <h4>Explore</h4>
           <a href="priests.html">Find a priest</a>
           <a href="poojas.html">Pooja services</a>
+          <a href="dashboard.html">Devotee Dashboard</a>
           <a href="about.html">About us</a>
         </div>
         <div>
-          <h4>Support</h4>
+          <h4>Support & Care</h4>
           <a href="contact.html">Contact</a>
-          <a href="login.html">Your account</a>
-          <a href="signup.html">Create account</a>
+          <a href="booking.html">Ceremony Booking</a>
+          <a href="signup.html">Create Account</a>
+          <a href="contact.html">Muhurtham Help</a>
         </div>
       </div>
-      <div class="copyright">© <span data-year></span> PoojaConnect. Made with devotion.</div>
+
+      <!-- Footer Bottom with Back to Top (Point 6) -->
+      <div class="footer-bottom">
+        <div>© <span data-year></span> PoojaConnect. Made with devotion.</div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+      </div>
     </div>
   </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="floatingBackTop" class="floating-back-top" aria-label="Scroll to top">↑</button>
 
   <script src="js/main.js"></script>
 </body>

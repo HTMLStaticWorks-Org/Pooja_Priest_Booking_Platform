@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Devotee Dashboard - Track your ceremony bookings, assigned Vedic priests, and pooja samagri with PoojaConnect.">
+  <title>Dashboard | PoojaConnect</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER & TOPBAR (Points 2, 3, 18, 19) -->
+  <header class="topbar">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ॐ</span>
+        <span>PoojaConnect</span>
+      </a>
+
+      <!-- Centered Navigation (Point 3) - Removed Login (Point 19) -->
+      <nav class="navlinks">
+        <a href="index.html">Home1</a>
+        <a href="home2.html">Home2</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="priests.html">Priests</a>
+        <a href="poojas.html">Poojas</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Mobile Drawer Actions (Point 18) -->
+        <div class="mobile-nav-actions">
+          <div class="mobile-nav-actions-row">
+            <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+            <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+          </div>
+          <a class="btn-nav-primary" href="signup.html">Sign up</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav Actions (Equal Height 42px) -->
+      <div class="nav-actions">
+        <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+        <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+        <a class="btn-nav-primary" href="signup.html">Sign up</a>
+      </div>
+
+      <button class="menu-btn" aria-label="Toggle mobile menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO WITH CENTERED HEADING & BACKGROUND IMAGE (Point 11) -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="tag">DEVOTEE PORTAL</span>
+        <h1 class="page-title">My Sacred Ceremonies Dashboard</h1>
+        <p>Manage your upcoming rituals, communicate with your assigned Vedic pandit, and access customized Muhurtham charts.</p>
+      </div>
+    </section>
+
+    <!-- DASHBOARD CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="dashboard-grid">
+          <!-- Devotee Sidebar Profile -->
+          <aside class="dash-sidebar">
+            <div class="dash-profile-card">
+              <img src="assets/images/testimonial-family1.jpg" alt="Devotee Avatar" class="dash-avatar">
+              <h3 style="margin:0 0 4px;font-size:1.15rem">Rajesh Sharma</h3>
+              <p class="muted" style="margin:0;font-size:0.85rem">Devotee ID: <strong>#PC-8842</strong></p>
+              <span class="tag" style="margin-top:8px">Bengaluru · Rohini Nakshatra</span>
+            </div>
+
+            <nav class="dash-nav">
+              <a href="#bookings" class="active">🗓️ My Bookings (2)</a>
+              <a href="#priests">🪔 Assigned Pandits</a>
+              <a href="#samagri">📦 Samagri Checklist</a>
+              <a href="#muhurtham">📜 Muhurtham Charts</a>
+              <a href="#settings">⚙️ Family Preferences</a>
+            </nav>
+
+            <div style="margin-top:24px;padding:14px;background:var(--soft);border-radius:12px;font-size:0.84rem">
+              📞 <strong>Devotee Care Desk:</strong><br>
+              <span class="muted">Dedicated Line: +91 98765 43210</span>
+            </div>
+          </aside>
+
+          <!-- Main Bookings Overview -->
+          <div>
+            <!-- Stat Cards -->
+            <div class="dash-stats">
+              <div class="dash-stat-box">
+                <span class="muted" style="font-size:0.85rem;font-weight:700">UPCOMING POOJAS</span>
+                <strong>2</strong>
+                <span class="muted" style="font-size:0.8rem">Next: Nov 25, 2026</span>
+              </div>
+              <div class="dash-stat-box">
+                <span class="muted" style="font-size:0.85rem;font-weight:700">COMPLETED RITUALS</span>
+                <strong>4</strong>
+                <span class="muted" style="font-size:0.8rem">Vastu, Satyanarayan...</span>
+              </div>
+              <div class="dash-stat-box">
+                <span class="muted" style="font-size:0.85rem;font-weight:700">SAMAGRI KIT</span>
+                <strong style="color:#2e7d32">Dispatched</strong>
+                <span class="muted" style="font-size:0.8rem">Delivery on Nov 23</span>
+              </div>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px">
+              <div>
+                <h2 style="margin:0;font-size:1.4rem">Active Ceremony Bookings</h2>
+                <p class="muted" style="margin:2px 0 0;font-size:0.9rem">Review ritual schedules and priest coordination.</p>
+              </div>
+              <a href="booking.html" class="btn" style="padding:10px 18px;font-size:0.88rem">+ Book New Pooja</a>
+            </div>
+
+            <!-- Booking Card 1 -->
+            <article class="dash-booking-card">
+              <img src="assets/images/griha-pravesham.jpg" alt="Griha Pravesham Ceremony">
+              <div>
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                  <span class="badge-status badge-confirmed">✓ CONFIRMED</span>
+                  <span class="muted" style="font-size:0.82rem">Booking #PC-7729</span>
+                </div>
+                <h3 style="margin:0 0 6px;font-size:1.2rem">Griha Pravesham (Housewarming)</h3>
+                <p class="muted" style="margin:0 0 6px;font-size:0.88rem">
+                  📅 <strong>Wednesday, 25 Nov 2026</strong> · Muhurtham: <strong>07:15 AM - 08:45 AM</strong><br>
+                  📍 Whitefield, Bengaluru · Language: <strong>Tamil & Sanskrit</strong>
+                </p>
+                <p style="margin:0;font-size:0.85rem">
+                  🪔 Assigned Acharya: <strong>Pandit Raghavan Sharma</strong> (28+ yrs exp)
+                </p>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <a href="contact.html" class="btn light" style="font-size:0.82rem;padding:8px 14px">Contact Priest</a>
+                <a href="booking.html" class="btn secondary" style="font-size:0.82rem;padding:8px 14px">View Muhurtham Chart</a>
+              </div>
+            </article>
+
+            <!-- Booking Card 2 -->
+            <article class="dash-booking-card">
+              <img src="assets/images/ganapathi-homam.jpg" alt="Ganapathi Homam">
+              <div>
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+                  <span class="badge-status badge-pending">⌛ SAMAGRI PACKING</span>
+                  <span class="muted" style="font-size:0.82rem">Booking #PC-8810</span>
+                </div>
+                <h3 style="margin:0 0 6px;font-size:1.2rem">Maha Ganapathi & Navagraha Homam</h3>
+                <p class="muted" style="margin:0 0 6px;font-size:0.88rem">
+                  📅 <strong>Saturday, 12 Dec 2026</strong> · Muhurtham: <strong>06:30 AM - 09:00 AM</strong><br>
+                  📍 Indiranagar, Bengaluru · Language: <strong>Telugu & Sanskrit</strong>
+                </p>
+                <p style="margin:0;font-size:0.85rem">
+                  🪔 Assigned Acharya: <strong>Acharya Vidyanand Shastri</strong> (22+ yrs exp)
+                </p>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <a href="contact.html" class="btn light" style="font-size:0.82rem;padding:8px 14px">Contact Priest</a>
+                <a href="booking.html" class="btn secondary" style="font-size:0.82rem;padding:8px 14px">Samagri Checklist</a>
+              </div>
+            </article>
+
+            <!-- Preparation Checklist Notice -->
+            <div style="background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:28px">
+              <h3 style="margin:0 0 8px;font-size:1.15rem;display:flex;align-items:center;gap:8px">
+                <span>📦</span> Pre-Ceremony Preparation Reminder
+              </h3>
+              <p class="muted" style="margin:0 0 14px;font-size:0.92rem">
+                All herbal havan samagri, A2 cow ghee, and sacred samit have been confirmed for your Griha Pravesham. Please keep fresh coconuts, betel leaves, and brass plates ready 30 minutes prior to the muhurtham.
+              </p>
+              <a href="poojas.html" style="color:var(--brand);font-weight:700;font-size:0.88rem">Download Full Preparation PDF Guide →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CENTERED CTA SECTION WITH BUTTON BELOW (Points 21, 25) -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-content">
+            <h2>Planning another ceremony for your family?</h2>
+            <p>Speak with our senior astrologers for complimentary Nakshatra Muhurtham consultation.</p>
+          </div>
+          <a class="btn" href="booking.html">Book Another Ceremony →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP (Point 6) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo-mark">ॐ</span>
+            <span>PoojaConnect</span>
+          </a>
+          <p class="muted">A simpler, more thoughtful way to arrange sacred Vedic ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
+          <div class="socials">
+            <a href="https://instagram.com" aria-label="Instagram">◎</a>
+            <a href="https://facebook.com" aria-label="Facebook">f</a>
+            <a href="https://youtube.com" aria-label="YouTube">▶</a>
+            <a href="https://wa.me/" aria-label="WhatsApp">◉</a>
+          </div>
+        </div>
+        <div>
+          <h4>Sacred Poojas</h4>
+          <a href="poojas.html">Griha Pravesham</a>
+          <a href="poojas.html">Satyanarayan Pooja</a>
+          <a href="poojas.html">Ganapathi Homam</a>
+          <a href="poojas.html">Vivaha Samskara</a>
+          <a href="poojas.html">Ayushya Homam</a>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="priests.html">Find a priest</a>
+          <a href="poojas.html">Pooja services</a>
+          <a href="dashboard.html">Devotee Dashboard</a>
+          <a href="about.html">About us</a>
+        </div>
+        <div>
+          <h4>Support & Care</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="booking.html">Ceremony Booking</a>
+          <a href="signup.html">Create Account</a>
+          <a href="contact.html">Muhurtham Help</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span data-year></span> PoojaConnect. Made with devotion.</div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+      </div>
+    </div>
+  </footer>
+
+  <button id="floatingBackTop" class="floating-back-top" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

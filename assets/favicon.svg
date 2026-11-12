@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fff7b2" />
+      <stop offset="45%" stop-color="#ff9800" />
+      <stop offset="100%" stop-color="#e65100" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="flameGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e1" />
+      <stop offset="30%" stop-color="#ffc107" />
+      <stop offset="70%" stop-color="#ff6f00" />
+      <stop offset="100%" stop-color="#d84315" />
+    </linearGradient>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe082" />
+      <stop offset="40%" stop-color="#ffb300" />
+      <stop offset="75%" stop-color="#f57c00" />
+      <stop offset="100%" stop-color="#b26a00" />
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb300" />
+      <stop offset="100%" stop-color="#8d4b00" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle for contrast -->
+  <circle cx="32" cy="32" r="30" fill="#2d150b" />
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#e0953a" stroke-width="1.5" stroke-dasharray="2,2" />
+  
+  <!-- Outer Aura Glow -->
+  <circle cx="32" cy="22" r="16" fill="url(#flameGlow)" />
+  
+  <!-- Flame -->
+  <path d="M32 8 C29 15 25 19 25 25 C25 29.5 28 33 32 33 C36 33 39 29.5 39 25 C39 19 35 15 32 8 Z" fill="url(#flameGrad)" />
+  <!-- Flame Core -->
+  <path d="M32 17 C30.8 20.5 29 23 29 26.5 C29 28.5 30.3 30.5 32 30.5 C33.7 30.5 35 28.5 35 26.5 C35 23 33.2 20.5 32 17 Z" fill="#ffffff" opacity="0.9" />
+  
+  <!-- Brass Diya Bowl -->
+  <path d="M14 33 C18 45 46 45 50 33 C46 36 38 38 32 38 C26 38 18 36 14 33 Z" fill="url(#brassGrad)" />
+  <ellipse cx="32" cy="33.5" rx="17.5" ry="3.5" fill="#e65100" opacity="0.4" />
+  
+  <!-- Diya Stem / Pedestal -->
+  <path d="M28 42 L36 42 L35 48 L29 48 Z" fill="url(#brassGrad)" />
+  
+  <!-- Diya Base -->
+  <path d="M22 48 C26 47 38 47 42 48 C43 51 45 53 47 54 L17 54 C19 53 21 51 22 48 Z" fill="url(#baseGrad)" />
+</svg>

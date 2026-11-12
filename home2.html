@@ -5,57 +5,110 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A sacred experience, from search to ceremony. Book trusted priests, authentic Vedic rituals, and premium samagri with PoojaConnect.">
   <title>Home2 | PoojaConnect</title>
-  <link rel="icon" href="assets/images/brass-diya-close.jpg" type="image/jpeg">
+  <!-- Dedicated Sacred Diya Favicon (Point 1) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- HEADER & TOPBAR (Points 2, 3, 18, 19) -->
   <header class="topbar">
     <div class="container nav">
-      <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ॐ</span>
+        <span>PoojaConnect</span>
+      </a>
+
+      <!-- Centered Navigation Links (Point 3) - Removed Login (Point 19) -->
       <nav class="navlinks">
-        <a class="" href="index.html">Home1</a>
+        <a href="index.html">Home1</a>
         <a class="active" href="home2.html">Home2</a>
-        <a class="" href="priests.html">Priests</a>
-        <a class="" href="poojas.html">Poojas</a>
-        <a class="" href="about.html">About</a>
-        <a class="" href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="priests.html">Priests</a>
+        <a href="poojas.html">Poojas</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Mobile Drawer Actions (Point 18) -->
+        <div class="mobile-nav-actions">
+          <div class="mobile-nav-actions-row">
+            <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+            <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+          </div>
+          <a class="btn-nav-primary" href="signup.html">Sign up</a>
+        </div>
       </nav>
+
+      <!-- Desktop Nav Actions (Equal Height 42px) -->
       <div class="nav-actions">
         <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
         <button class="icon-btn" data-theme-toggle>☾ Theme</button>
-        <a class="btn" href="signup.html">Sign up</a>
-        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <a class="btn-nav-primary" href="signup.html">Sign up</a>
       </div>
+
+      <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
     </div>
   </header>
 
   <main>
-    <!-- PAGE HERO WITH DUAL LAYOUT -->
-    <section class="page-hero">
-      <div class="container">
-        <span class="tag">A MORE PERSONAL WAY TO BOOK</span>
-        <h1 class="page-title">A sacred experience, from search to ceremony.</h1>
-        <p>Choose the ritual, meet the right priest, and get ready for a peaceful, well-organised occasion with authentic Vedic traditions.</p>
-        <div style="display:flex;gap:12px;margin-top:20px;flex-wrap:wrap">
-          <a class="btn" href="booking.html">Plan your ceremony →</a>
-          <a class="btn secondary" href="poojas.html">Browse all poojas</a>
+    <!-- BRAND NEW DISTINCT HERO DESIGN FOR HOME 2 (Point 7) -->
+    <section class="home2-hero">
+      <div class="container home2-hero-content">
+        <span class="eyebrow" style="background:rgba(255,255,255,0.18);color:#ffd89b;border:1px solid rgba(255,216,155,0.3);backdrop-filter:blur(8px)">
+          ✦ VEDIC TRADITIONS AT YOUR DOORSTEP ✦
+        </span>
+        <h1>Book Certified Vedic Priests & <em>Sacred Pooja</em> Services</h1>
+        <p>Experience hassle-free sacred ceremonies at home, temple, or venue with verified Veda pandits, auspicious muhurtham guidance, and pure samagri kits.</p>
+
+        <!-- Search Bar with Ceremony Selection -->
+        <form class="hero-search-box" action="booking.html" method="get">
+          <div class="search-field">
+            <label for="h2ceremony">Select Ceremony</label>
+            <select id="h2ceremony" name="ceremony">
+              <option>Griha Pravesham (Housewarming)</option>
+              <option>Satyanarayan Mahapooja</option>
+              <option>Ganapathi Homam</option>
+              <option>Naming Ceremony (Namakaran)</option>
+              <option>Ayushya Homam</option>
+              <option>Vivaha Samskara (Wedding)</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="h2lang">Tradition / Language</label>
+            <select id="h2lang" name="language">
+              <option>Tamil Sampradaya</option>
+              <option>Telugu Sampradaya</option>
+              <option>Kannada Sampradaya</option>
+              <option>North Indian / Hindi</option>
+              <option>Vedic Sanskrit</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="h2date">Preferred Date</label>
+            <input type="date" id="h2date" name="date">
+          </div>
+          <button type="submit" class="btn" style="height:44px;padding:0 22px">Find Priest →</button>
+        </form>
+
+        <!-- Tab Buttons in a SINGLE Line on ALL Devices (Point 10) -->
+        <div class="home2-tab-group">
+          <a class="btn light" href="booking.html">Plan Your Ceremony →</a>
+          <a class="btn secondary" href="poojas.html" style="background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3)">Explore All Poojas</a>
         </div>
       </div>
     </section>
 
-    <!-- PROMISE SECTION WITH REALISTIC PHOTOGRAPHY -->
+    <!-- PROMISE SECTION WITH RELEVANT REALISTIC PHOTOGRAPHY (Point 8) -->
     <section class="section">
       <div class="container grid-two">
         <div>
           <span class="tag">THE POOJACONNECT PROMISE</span>
-          <h2>Every detail deserves care.</h2>
+          <h2>Every sacred detail deserves reverence.</h2>
           <p class="muted">From understanding your family tradition to confirming the ceremony schedule, we make the process clear, welcoming, and reverent. Browse services at your pace and share only the details needed to get started.</p>
-          <ul class="muted" style="line-height:1.9">
-            <li><strong>Authentic traditions:</strong> Options for home, hall, and temple ceremonies</li>
-            <li><strong>Verified credentials:</strong> Priest profiles with language, lineage, and experience</li>
-            <li><strong>Purity assured:</strong> Pure cow ghee, herbal samagri, and clean brass essentials</li>
-            <li><strong>Timely presence:</strong> Priests arrive in advance for uninterrupted rituals</li>
+          <ul class="muted" style="line-height:1.9;padding-left:18px">
+            <li><strong>Authentic traditions:</strong> Options for home, hall, and temple ceremonies.</li>
+            <li><strong>Verified credentials:</strong> Priest profiles with language, lineage, and experience.</li>
+            <li><strong>Purity assured:</strong> Pure cow ghee, herbal samagri, and clean brass essentials.</li>
+            <li><strong>Timely presence:</strong> Priests arrive in advance for uninterrupted rituals.</li>
           </ul>
           <div style="margin-top:24px">
             <a class="btn" href="priests.html">Meet our priests →</a>
@@ -67,7 +120,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: UPCOMING AUSPICIOUS FESTIVALS & SPECIAL POOJAS -->
+    <!-- UPCOMING AUSPICIOUS FESTIVALS & SPECIAL POOJAS (Point 8, 24) -->
     <section class="section alt">
       <div class="container">
         <div class="section-head">
@@ -121,7 +174,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: VEDIC HERITAGE & RIGOROUS VERIFICATION -->
+    <!-- VEDIC HERITAGE & RIGOROUS VERIFICATION -->
     <section class="section">
       <div class="container grid-two">
         <div>
@@ -131,7 +184,7 @@
           <span class="tag">SHASTRA COMPLIANCE</span>
           <h2>The gold standard of ritual purity</h2>
           <p class="muted">We ensure each ceremony preserves the sanctity and depth intended by our ancient scriptures.</p>
-          <div style="display:flex;flex-direction:column;gap:16px;margin-top:20px">
+          <div style="display:flex;flex-direction:column;gap:18px;margin-top:20px">
             <div style="display:flex;gap:14px;align-items:flex-start">
               <span style="font-size:1.5rem">📜</span>
               <div>
@@ -158,15 +211,13 @@
       </div>
     </section>
 
-    <!-- HOW IT WORKS SECTION WITH REALISTIC PROCESS CARDS -->
+    <!-- HOW IT WORKS SECTION -->
     <section class="section alt">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">HOW IT WORKS</span>
-            <h2>Three simple, transparent steps</h2>
-            <p class="muted">Book in under 2 minutes and let us handle all logistics.</p>
-          </div>
+        <div class="section-head center">
+          <span class="tag">HOW IT WORKS</span>
+          <h2>Three simple, transparent steps</h2>
+          <p class="muted">Book in under 2 minutes and let us handle all logistics.</p>
         </div>
         <div class="features">
           <div class="feature">
@@ -188,55 +239,53 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: DEVOTEE TESTIMONIALS -->
+    <!-- DEVOTEE TESTIMONIALS (Point 24) -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">REAL EXPERIENCES</span>
-            <h2>Loved by families across the country</h2>
-            <p class="muted">Trusted by thousands of devotees for milestone rituals and festive blessings.</p>
-          </div>
+        <div class="section-head center">
+          <span class="tag">REAL EXPERIENCES</span>
+          <h2>Loved by families across the country</h2>
+          <p class="muted">Trusted by thousands of devotees for milestone rituals and festive blessings.</p>
         </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"The priest was extremely knowledgeable, punctual, and conducted the Ganapathi Homam with such peaceful energy. Will definitely use PoojaConnect for all future functions."</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family2.jpg" alt="Deepa & Rajesh Nair">
+        <div class="testimonials-grid cards">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "The priest was extremely knowledgeable, punctual, and conducted the Ganapathi Homam with such peaceful energy. Will definitely use PoojaConnect for all future functions."
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family2.jpg" alt="Deepa & Rajesh Nair" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Deepa & Rajesh Nair</div>
-                <div class="devotee-ceremony">Ganapathi Homam · Chennai</div>
+                <strong style="display:block;font-size:0.92rem">Deepa & Rajesh Nair</strong>
+                <span class="muted" style="font-size:0.8rem">Ganapathi Homam · Chennai</span>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"Booking our new flat's Griha Pravesham was effortless. The samagri package was so fresh and well-packed. Everything went exactly as per the auspicious muhurtham."</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family1.jpg" alt="Karthik & Sneha Sharma">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "Booking our new flat's Griha Pravesham was effortless. The samagri package was so fresh and well-packed. Everything went exactly as per the auspicious muhurtham."
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family1.jpg" alt="Karthik & Sneha Sharma" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Karthik & Sneha Sharma</div>
-                <div class="devotee-ceremony">Griha Pravesham · Bengaluru</div>
+                <strong style="display:block;font-size:0.92rem">Karthik & Sneha Sharma</strong>
+                <span class="muted" style="font-size:0.8rem">Griha Pravesham · Bengaluru</span>
               </div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div>
-              <div class="stars">★★★★★</div>
-              <blockquote>"Our family was very particular about Kannada & Sanskrit chanting for the Ayushya Homam. PoojaConnect assigned the perfect acharya. Exceptional dedication!"</blockquote>
-            </div>
-            <div class="devotee-profile">
-              <img class="devotee-avatar" src="assets/images/testimonial-family3.jpg" alt="Raghavendra & Suma Hegde">
+          <div class="card" style="padding:28px">
+            <div style="color:#f59e0b;font-size:1.15rem;margin-bottom:12px">★★★★★</div>
+            <p style="font-style:italic;margin-bottom:20px;font-size:0.95rem;line-height:1.6">
+              "Our family was very particular about Kannada & Sanskrit chanting for the Ayushya Homam. PoojaConnect assigned the perfect acharya. Exceptional dedication!"
+            </p>
+            <div style="display:flex;align-items:center;gap:14px;margin-top:auto">
+              <img src="assets/images/testimonial-family3.jpg" alt="Raghavendra & Suma Hegde" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--soft)">
               <div>
-                <div class="devotee-name">Raghavendra & Suma Hegde</div>
-                <div class="devotee-ceremony">Ayushya Homam · Mysuru</div>
+                <strong style="display:block;font-size:0.92rem">Raghavendra & Suma Hegde</strong>
+                <span class="muted" style="font-size:0.8rem">Ayushya Homam · Mysuru</span>
               </div>
             </div>
           </div>
@@ -244,25 +293,29 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: MUHURTHAM CONSULTATION & CTA -->
+    <!-- CENTERED CTA SECTION WITH BUTTON BELOW IN ALL THREE DEVICES (Points 9, 21) -->
     <section class="section">
       <div class="container">
         <div class="cta">
-          <div>
+          <div class="cta-content">
             <h2>Need guidance on the best auspicious Muhurtham?</h2>
             <p>Our senior Vedic scholars provide personalized date and time consultation for your family's Janma Nakshatra.</p>
           </div>
-          <a class="btn light" href="contact.html">Request Free Muhurtham Advice →</a>
+          <a class="btn" href="contact.html">Request Free Muhurtham Advice →</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP (Point 6) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
+          <a class="logo" href="index.html">
+            <span class="logo-mark">ॐ</span>
+            <span>PoojaConnect</span>
+          </a>
           <p class="muted">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
           <div class="socials">
             <a href="https://instagram.com" aria-label="Instagram">◎</a>
@@ -272,21 +325,37 @@
           </div>
         </div>
         <div>
+          <h4>Sacred Ceremonies</h4>
+          <a href="poojas.html">Griha Pravesham</a>
+          <a href="poojas.html">Satyanarayan Pooja</a>
+          <a href="poojas.html">Ganapathi Homam</a>
+          <a href="poojas.html">Vivaha Samskara</a>
+          <a href="poojas.html">Ayushya Homam</a>
+        </div>
+        <div>
           <h4>Explore</h4>
           <a href="priests.html">Find a priest</a>
           <a href="poojas.html">Pooja services</a>
+          <a href="dashboard.html">Devotee Dashboard</a>
           <a href="about.html">About us</a>
         </div>
         <div>
-          <h4>Support</h4>
+          <h4>Support & Care</h4>
           <a href="contact.html">Contact</a>
-          <a href="login.html">Your account</a>
-          <a href="signup.html">Create account</a>
+          <a href="booking.html">Ceremony Booking</a>
+          <a href="signup.html">Create Account</a>
+          <a href="contact.html">Muhurtham Help</a>
         </div>
       </div>
-      <div class="copyright">© <span data-year></span> PoojaConnect. Made with devotion.</div>
+
+      <div class="footer-bottom">
+        <div>© <span data-year></span> PoojaConnect. Made with devotion.</div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+      </div>
     </div>
   </footer>
+
+  <button id="floatingBackTop" class="floating-back-top" aria-label="Scroll to top">↑</button>
 
   <script src="js/main.js"></script>
 </body>

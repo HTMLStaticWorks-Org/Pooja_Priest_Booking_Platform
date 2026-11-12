@@ -5,32 +5,52 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Learn more about PoojaConnect's mission to make sacred ceremonies calm, authentic, and accessible.">
   <title>About | PoojaConnect</title>
-  <link rel="icon" href="assets/images/brass-diya-close.jpg" type="image/jpeg">
+  <!-- Dedicated Sacred Diya Favicon (Point 1) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- HEADER & TOPBAR (Points 2, 3, 18, 19) -->
   <header class="topbar">
     <div class="container nav">
-      <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">ॐ</span>
+        <span>PoojaConnect</span>
+      </a>
+
+      <!-- Centered Navigation Links (Point 3) - Removed Login (Point 19) -->
       <nav class="navlinks">
-        <a class="" href="index.html">Home1</a>
-        <a class="" href="home2.html">Home2</a>
-        <a class="" href="priests.html">Priests</a>
-        <a class="" href="poojas.html">Poojas</a>
+        <a href="index.html">Home1</a>
+        <a href="home2.html">Home2</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="priests.html">Priests</a>
+        <a href="poojas.html">Poojas</a>
         <a class="active" href="about.html">About</a>
-        <a class="" href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- Mobile Drawer Actions (Point 18) -->
+        <div class="mobile-nav-actions">
+          <div class="mobile-nav-actions-row">
+            <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+            <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+          </div>
+          <a class="btn-nav-primary" href="signup.html">Sign up</a>
+        </div>
       </nav>
+
+      <!-- Desktop Nav Actions (Equal Height 42px) -->
       <div class="nav-actions">
         <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
         <button class="icon-btn" data-theme-toggle>☾ Theme</button>
-        <a class="btn" href="signup.html">Sign up</a>
-        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <a class="btn-nav-primary" href="signup.html">Sign up</a>
       </div>
+
+      <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
     </div>
   </header>
 
   <main>
+    <!-- PAGE HERO WITH CENTERED HEADING & BACKGROUND IMAGE (Point 11) -->
     <section class="page-hero">
       <div class="container">
         <span class="tag">ABOUT US</span>
@@ -39,9 +59,10 @@
       </div>
     </section>
 
+    <!-- MISSION SECTION -->
     <section class="section">
       <div class="container grid-two">
-        <img src="assets/images/about-temple.jpg" alt="Majestic historic Indian temple" style="border-radius:24px;box-shadow:var(--shadow);width:100%;height:380px;object-fit:cover">
+        <img src="assets/images/about-temple.jpg" alt="Historic Indian temple" style="border-radius:24px;box-shadow:var(--shadow);width:100%;height:380px;object-fit:cover">
         <div>
           <span class="tag">OUR SACRED MISSION</span>
           <h2>Honouring the wisdom of tradition</h2>
@@ -54,30 +75,58 @@
       </div>
     </section>
 
-    <!-- NEW SECTION: HERITAGE & RIGOR -->
+    <!-- HERITAGE & RIGOR SECTION (RELEVANT IMAGERY) (Point 14) -->
     <section class="section alt">
       <div class="container grid-two">
         <div>
           <span class="tag">PRESERVING SANCTITY</span>
           <h2>Purity in every mantra and offering</h2>
           <p class="muted">Every ritual performed through PoojaConnect strictly follows established Vedic scriptures. From the sacred fire havan kund to the pronunciation of mantras, we preserve the spiritual essence of Indian culture.</p>
-          <ul class="muted" style="line-height:1.8;margin-top:14px">
-            <li><strong>Verified Gurukula Scholars:</strong> Certified through respected Veda Patashalas</li>
-            <li><strong>Pure Organic Samagri:</strong> 100% natural herbs, pure cow ghee, and fresh flowers</li>
-            <li><strong>Inter-generational Clarity:</strong> Priests explain the significance so the entire family connects</li>
+          <ul class="muted" style="line-height:1.8;margin-top:14px;padding-left:18px">
+            <li><strong>Verified Gurukula Scholars:</strong> Certified through respected Veda Patashalas.</li>
+            <li><strong>Pure Organic Samagri:</strong> 100% natural herbs, pure cow ghee, and fresh flowers.</li>
+            <li><strong>Inter-generational Clarity:</strong> Priests explain the significance so the entire family connects.</li>
           </ul>
         </div>
+        <!-- Relevant Ritual Visual (Point 14) -->
         <img src="assets/images/ritual-hands.jpg" alt="Vedic priest offering sacred blessings with pure flowers and holy water" style="border-radius:24px;box-shadow:var(--shadow);width:100%;height:350px;object-fit:cover">
       </div>
     </section>
 
+    <!-- NEW SECTION ADDED TO ABOUT PAGE: SPIRITUAL ADVISORY COUNCIL (Point 14) -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="tag">OUR CORE PILLARS</span>
-            <h2>Principles guiding every ceremony</h2>
+        <div class="section-head center">
+          <span class="tag">GOVERNANCE & SANCTITY</span>
+          <h2>Guided by Esteemed Vedic Scholars & Acharyas</h2>
+          <p class="muted">Our advisory council ensures every ceremony adheres strictly to traditional shastras.</p>
+        </div>
+        <div class="cards">
+          <div class="card" style="padding:28px">
+            <div style="font-size:2rem;margin-bottom:10px">📜</div>
+            <h3>Veda Patashala Affiliations</h3>
+            <p class="muted" style="font-size:0.92rem">Collaborating with over 18 heritage Gurukulams across Varanasi, Kanchipuram, Tirupati, and Sringeri to vet scholars.</p>
           </div>
+          <div class="card" style="padding:28px">
+            <div style="font-size:2rem;margin-bottom:10px">🪔</div>
+            <h3>Panchangam & Muhurtham Bureau</h3>
+            <p class="muted" style="font-size:0.92rem">Senior astrologers cross-referencing regional ephemeris and solar-lunar calendars for pinpoint auspicious timings.</p>
+          </div>
+          <div class="card" style="padding:28px">
+            <div style="font-size:2rem;margin-bottom:10px">🤝</div>
+            <h3>Devotee Welfare Guarantee</h3>
+            <p class="muted" style="font-size:0.92rem">Zero commercial exploitation, fixed transparent dakshina, and a devoted coordinator dedicated to your ceremony.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PILLARS (Point 26: Last Card in Center in 768px) -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head center">
+          <span class="tag">OUR CORE PILLARS</span>
+          <h2>Principles guiding every ceremony</h2>
         </div>
         <div class="features">
           <div class="feature">
@@ -98,13 +147,30 @@
         </div>
       </div>
     </section>
+
+    <!-- CENTERED CTA SECTION WITH BUTTON BELOW IN ALL THREE DEVICES (Points 21, 25) -->
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-content">
+            <h2>Experience the peace of a well-arranged ceremony</h2>
+            <p>Connect with our coordinators to discuss your family's upcoming occasion.</p>
+          </div>
+          <a class="btn" href="booking.html">Schedule a Ceremony →</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP (Point 6) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="logo" href="index.html">ஓம் <span>PoojaConnect</span></a>
+          <a class="logo" href="index.html">
+            <span class="logo-mark">ॐ</span>
+            <span>PoojaConnect</span>
+          </a>
           <p class="muted">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
           <div class="socials">
             <a href="https://instagram.com" aria-label="Instagram">◎</a>
@@ -114,21 +180,37 @@
           </div>
         </div>
         <div>
+          <h4>Sacred Ceremonies</h4>
+          <a href="poojas.html">Griha Pravesham</a>
+          <a href="poojas.html">Satyanarayan Pooja</a>
+          <a href="poojas.html">Ganapathi Homam</a>
+          <a href="poojas.html">Vivaha Samskara</a>
+          <a href="poojas.html">Ayushya Homam</a>
+        </div>
+        <div>
           <h4>Explore</h4>
           <a href="priests.html">Find a priest</a>
           <a href="poojas.html">Pooja services</a>
+          <a href="dashboard.html">Devotee Dashboard</a>
           <a href="about.html">About us</a>
         </div>
         <div>
-          <h4>Support</h4>
+          <h4>Support & Care</h4>
           <a href="contact.html">Contact</a>
-          <a href="login.html">Your account</a>
-          <a href="signup.html">Create account</a>
+          <a href="booking.html">Ceremony Booking</a>
+          <a href="signup.html">Create Account</a>
+          <a href="contact.html">Muhurtham Help</a>
         </div>
       </div>
-      <div class="copyright">© <span data-year></span> PoojaConnect. Made with devotion.</div>
+
+      <div class="footer-bottom">
+        <div>© <span data-year></span> PoojaConnect. Made with devotion.</div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+      </div>
     </div>
   </footer>
+
+  <button id="floatingBackTop" class="floating-back-top" aria-label="Scroll to top">↑</button>
 
   <script src="js/main.js"></script>
 </body>
