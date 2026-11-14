@@ -1844,5 +1844,5 @@ textarea:focus {
   }
 }
 
-/* Hide navbar, topbar, footer, and back-to-top button for a clean dashboard view */
-.topbar, .footer, .floating-back-top { display: none !important; }
+
+
