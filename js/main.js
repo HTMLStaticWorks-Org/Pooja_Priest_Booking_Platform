@@ -121,36 +121,59 @@
     });
   });
 
-  // Dashboard Tabs Interactive Switcher (Point 4 in Image 2)
+  // Dashboard Tabs Interactive Switcher (Point 4 in Image 2: Full functional sidebar in all devices)
   const dashTabBtns = document.querySelectorAll('.dash-tab-btn');
   const dashPanels = document.querySelectorAll('.dash-panel');
   if (dashTabBtns.length && dashPanels.length) {
+    const activateTab = (targetTabId, smoothScroll = false) => {
+      dashTabBtns.forEach((b) => {
+        if (b.getAttribute('data-tab') === targetTabId) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+      dashPanels.forEach((p) => {
+        if (p.id === targetTabId) {
+          p.classList.add('active');
+        } else {
+          p.classList.remove('active');
+        }
+      });
+
+      if (smoothScroll && window.innerWidth <= 1024) {
+        const activePanel = document.getElementById(targetTabId);
+        if (activePanel) {
+          const yOffset = -90;
+          const y = activePanel.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    };
+
     dashTabBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
         const targetTab = btn.getAttribute('data-tab');
-        dashTabBtns.forEach((b) => b.classList.remove('active'));
-        dashPanels.forEach((p) => p.classList.remove('active'));
-
-        btn.classList.add('active');
-        const activePanel = document.getElementById(targetTab);
-        if (activePanel) {
-          activePanel.classList.add('active');
-        }
+        activateTab(targetTab, true);
       });
     });
 
-    // Quick switch links within dashboard cards
+    // Quick switch links within dashboard cards (e.g. "Muhurtham Chart", "Samagri List")
     document.querySelectorAll('.dash-quick-tab').forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         const targetTab = link.getAttribute('data-tab');
-        const targetBtn = document.querySelector(`.dash-tab-btn[data-tab="${targetTab}"]`);
-        if (targetBtn) {
-          targetBtn.click();
-          targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
+        activateTab(targetTab, true);
       });
     });
+
+    // Hash navigation on page load (e.g., dashboard.html#tab-samagri)
+    if (window.location.hash) {
+      const hashTab = window.location.hash.replace('#', '');
+      if (document.getElementById(hashTab)) {
+        activateTab(hashTab, false);
+      }
+    }
   }
 
   // Form Submissions in Demo
