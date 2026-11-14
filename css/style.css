@@ -13,8 +13,8 @@
   --line: #eadbc9;
   --shadow: 0 16px 45px rgba(93, 53, 25, 0.08);
   --shadow-lg: 0 24px 60px rgba(93, 53, 25, 0.14);
-  --brand-brown: #7a2e16; /* Deep Vedic Brown (Point 1A in Image 1) */
-  --brand-om: #a9432a;    /* Brown Om Mark */
+  /* Brand Logo: EXACT SAME Brown color in BOTH light and dark themes always */
+  --brand-brown: #a9432a; /* Sacred Vedic Terracotta Brown */
 }
 
 [data-theme="dark"] {
@@ -26,8 +26,7 @@
   --line: #42362d;
   --shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.6);
-  --brand-brown: #d97735; /* Luminous Warm Copper Brown (Point 1A in Image 1) */
-  --brand-om: #e28743;    /* Warm Saffron Brown */
+  --brand-brown: #a9432a; /* STRICTLY IDENTICAL in dark & light */
 }
 
 * {
@@ -84,30 +83,30 @@ img {
   gap: 16px;
 }
 
-/* Brand Logo (Point 1A: Brown in BOTH Themes; Point 2: Avoid Tamil, Universal Devanagari ॐ) */
+/* Brand Logo (Point 1A: EXACT SAME Brown in BOTH Dark and Light Themes ALWAYS) */
+.logo,
+.logo span,
+.logo-mark,
+[data-theme="dark"] .logo,
+[data-theme="dark"] .logo span,
+[data-theme="dark"] .logo-mark {
+  color: var(--brand-brown) !important;
+}
+
 .logo {
   font-weight: 800;
   font-size: 1.28rem;
-  color: var(--brand-brown);
   display: inline-flex;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
   letter-spacing: -0.02em;
-  transition: color 0.25s ease;
 }
 
 .logo-mark {
   font-size: 1.55rem;
-  color: var(--brand-om);
   line-height: 1;
   font-family: serif;
-  transition: color 0.25s ease;
-}
-
-.logo span {
-  color: var(--brand-brown);
-  transition: color 0.25s ease;
 }
 
 /* Centered Navigation Links */
