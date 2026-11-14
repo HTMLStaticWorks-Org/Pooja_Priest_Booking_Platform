@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Discover popular sacred ceremonies and send a booking request with your preferred date. Authentic Vedic rituals with verified pandits.">
   <title>Poojas | PoojaConnect</title>
-  <!-- Dedicated Sacred Diya Favicon (Point 1) -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- HEADER & TOPBAR (Points 2, 3, 18, 19) -->
+  <!-- HEADER & TOPBAR (Nav order: Home1, Home2, About, Priests, Poojas, Contact, Dashboard) -->
   <header class="topbar">
     <div class="container nav">
       <a class="logo" href="index.html">
@@ -18,17 +17,17 @@
         <span>PoojaConnect</span>
       </a>
 
-      <!-- Centered Navigation Links (Point 3) - Removed Login (Point 19) -->
+      <!-- Centered Navigation Links -->
       <nav class="navlinks">
         <a href="index.html">Home1</a>
         <a href="home2.html">Home2</a>
-        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
         <a href="priests.html">Priests</a>
         <a class="active" href="poojas.html">Poojas</a>
-        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="dashboard.html">Dashboard</a>
 
-        <!-- Mobile Drawer Actions (Point 18) -->
+        <!-- Mobile Drawer Actions -->
         <div class="mobile-nav-actions">
           <div class="mobile-nav-actions-row">
             <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
@@ -38,7 +37,7 @@
         </div>
       </nav>
 
-      <!-- Desktop Nav Actions (Equal Height 42px) -->
+      <!-- Desktop Nav Actions -->
       <div class="nav-actions">
         <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
         <button class="icon-btn" data-theme-toggle>☾ Theme</button>
@@ -50,7 +49,7 @@
   </header>
 
   <main>
-    <!-- PAGE HERO WITH CENTERED HEADING & BACKGROUND IMAGE (Point 11) -->
+    <!-- PAGE HERO WITH CENTERED HEADING & BACKGROUND IMAGE -->
     <section class="page-hero">
       <div class="container">
         <span class="tag">SACRED CEREMONIES DIRECTORY</span>
@@ -183,7 +182,7 @@
       </div>
     </section>
 
-    <!-- NEW SECTION 1 FOR POOJAS PAGE: SAMAGRI PACKAGES COMPARISON (Point 13) -->
+    <!-- SAMAGRI PACKAGES COMPARISON -->
     <section class="section alt">
       <div class="container">
         <div class="section-head center">
@@ -239,29 +238,29 @@
       </div>
     </section>
 
-    <!-- NEW SECTION 2 FOR POOJAS PAGE: MUHURTHAM GUIDANCE (Point 13) -->
+    <!-- MUHURTHAM GUIDANCE SECTION (Fixed mobile layout - Point 9 in Image 4) -->
     <section class="section">
       <div class="container grid-two">
         <div>
           <span class="tag">SHASTRA PANCHANGAM</span>
           <h2>Understanding Muhurtham & Tithi for your ceremony</h2>
           <p class="muted">Choosing an auspicious time (Shubh Muhurtham) aligns cosmic vibrations, planetary positions, and your family's Janma Nakshatra for maximum spiritual benefits.</p>
-          <ul class="muted" style="line-height:1.9;padding-left:18px">
+          <ul class="muted" style="line-height:1.9;padding-left:18px;margin:16px 0 22px">
             <li><strong>Shukla Paksha (Waxing Moon):</strong> Most propitious for Griha Pravesham, Namakaran, and weddings.</li>
             <li><strong>Brahma Muhurtham (04:30 AM - 06:00 AM):</strong> Supreme hour for peace, high energy, and homam.</li>
             <li><strong>Nakshatra Compatibility:</strong> Avoiding Rahu Kalam, Yamagandam, and Ashtami/Navami thithis.</li>
           </ul>
-          <div style="margin-top:20px">
+          <div>
             <a class="btn" href="contact.html">Request Free Muhurtham Consultation →</a>
           </div>
         </div>
         <div>
-          <img src="assets/images/brass-diya-close.jpg" alt="Auspicious diya for muhurtham" style="border-radius:24px;box-shadow:var(--shadow);width:100%;height:380px;object-fit:cover">
+          <img src="assets/images/brass-diya-close.jpg" alt="Auspicious diya for muhurtham" style="border-radius:24px;box-shadow:var(--shadow);width:100%;height:350px;object-fit:cover">
         </div>
       </div>
     </section>
 
-    <!-- CENTERED CTA SECTION WITH BUTTON BELOW IN ALL THREE DEVICES (Points 13, 21, 25) -->
+    <!-- CENTERED CTA SECTION WITH BUTTON BELOW (Fixed mobile button layout - Point 10 in Image 5) -->
     <section class="section">
       <div class="container">
         <div class="cta">
@@ -275,16 +274,17 @@
     </section>
   </main>
 
-  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP (Point 6) -->
+  <!-- 4-COLUMN FOOTER WITH SOCIAL HOVER & BACK TO TOP ICON BUTTON -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
+          <!-- Larger Brand Name (Point 2 in Image 1) -->
           <a class="logo" href="index.html">
             <span class="logo-mark">ॐ</span>
             <span>PoojaConnect</span>
           </a>
-          <p class="muted">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
+          <p class="muted" style="margin-top:10px">A simpler, more thoughtful way to arrange sacred ceremonies, connect with trusted priests, and preserve traditional rituals.</p>
           <div class="socials">
             <a href="https://instagram.com" aria-label="Instagram">◎</a>
             <a href="https://facebook.com" aria-label="Facebook">f</a>
@@ -304,8 +304,8 @@
           <h4>Explore</h4>
           <a href="priests.html">Find a priest</a>
           <a href="poojas.html">Pooja services</a>
-          <a href="dashboard.html">Devotee Dashboard</a>
           <a href="about.html">About us</a>
+          <a href="dashboard.html">Devotee Dashboard</a>
         </div>
         <div>
           <h4>Support & Care</h4>
@@ -316,9 +316,10 @@
         </div>
       </div>
 
+      <!-- Footer Bottom with Back to Top ICON ONLY (No text - Point 2 in Image 1) -->
       <div class="footer-bottom">
         <div>© <span data-year></span> PoojaConnect. Made with devotion.</div>
-        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
       </div>
     </div>
   </footer>

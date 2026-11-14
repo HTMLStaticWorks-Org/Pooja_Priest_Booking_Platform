@@ -44,7 +44,7 @@
   });
   updateRTLButtons(body.classList.contains('rtl'));
 
-  // Mobile Menu Toggle (Point 18)
+  // Mobile Menu Toggle (Point 18, 1024px tablet fix)
   const menuBtn = document.querySelector('.menu-btn');
   const navLinks = document.querySelector('.navlinks');
   if (menuBtn && navLinks) {
@@ -54,7 +54,6 @@
       menuBtn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
       if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
         navLinks.classList.remove('open');
@@ -72,24 +71,21 @@
       input.type = isPassword ? 'text' : 'password';
       btn.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
 
-      // Update Eye SVG
       if (isPassword) {
-        // Eye Slash
         btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
           <line x1="1" y1="1" x2="23" y2="23"></line>
         </svg>`;
       } else {
-        // Normal Eye
         btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-          <circle cx="12" cy="12" r="3"></circle>
+          <circle cx="12" cy="10" r="3"></circle>
         </svg>`;
       }
     });
   });
 
-  // Back to Top Button (Point 6)
+  // Back to Top Button (Point 2 in Image 1: Icon only)
   const backToTopBtn = document.getElementById('backToTop');
   const floatingBackTop = document.getElementById('floatingBackTop');
 
@@ -124,6 +120,25 @@
       }
     });
   });
+
+  // Dashboard Tabs Interactive Switcher (Point 4 in Image 2)
+  const dashTabBtns = document.querySelectorAll('.dash-tab-btn');
+  const dashPanels = document.querySelectorAll('.dash-panel');
+  if (dashTabBtns.length && dashPanels.length) {
+    dashTabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        dashTabBtns.forEach((b) => b.classList.remove('active'));
+        dashPanels.forEach((p) => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const activePanel = document.getElementById(targetTab);
+        if (activePanel) {
+          activePanel.classList.add('active');
+        }
+      });
+    });
+  }
 
   // Form Submissions in Demo
   document.querySelectorAll('form[data-demo]').forEach((form) => {

@@ -5,44 +5,34 @@ A responsive, multi-page HTML/CSS/JavaScript front-end web application with auth
 ## Run
 Open `index.html` or `home2.html` in any modern web browser. No build tools or server setup required.
 
-## Pages
-- `index.html` — **Home1**: Main landing page featuring:
-  - Hero with majestic South Indian temple photography and single-line mobile buttons
-  - Auspicious trust metrics & statistics banner
-  - Core Pooja Services grid with authentic photography
-  - **Sacred Rituals Visual Gallery** (Deepa Aradhana, Vedic Havan, Kalash Sthapana, Vivaha, Chanting, Festivals)
-  - **4-Step Booking Workflow** with visual cards
-  - **Featured Verified Veda Priests** showcase with credentials and languages
-  - **Pure Samagri & Preparation Kit Guarantee** banner
-  - **Why PoojaConnect** trust pillars
-  - **Devotee Testimonials & Real Celebrations** with verified customer reviews
-  - **Collapsible Interactive FAQ Dropdown Accordion**
-  - Centered CTA with separate button below
-- `home2.html` — **Home2**: Alternate search & festival-driven landing page featuring:
-  - Brand new full-width hero with integrated ceremony search and single-line action buttons
-  - The PoojaConnect Promise with authentic brass thali photography
-  - **Upcoming Auspicious Festivals Calendar** (Diwali, Ganesh Chaturthi, Maha Shivaratri)
-  - **Vedic Heritage & Shastra Verification Standards** with authentic chanting photography
-  - 3-step simple ceremony planner
-  - Devotee reviews and real celebrations
-  - Centered CTA with separate button below
-- `dashboard.html` — **Devotee Dashboard**:
-  - Devotee profile summary (ID, Nakshatra, contact care)
-  - Active bookings tracker with status badges (Confirmed, Packing)
-  - Assigned priest details and direct contact triggers
-  - Samagri checklist and downloadable preparation guides
-  - Quick ceremony booking launcher
-- `priests.html` — Certified Vedic Priest Directory with uncropped realistic portraits, 1-by-1 mobile layout, 4-stage verification process section, preparation guidelines, and centered CTA.
-- `poojas.html` — 9 traditional ceremonies with realistic ritual photography, customized package comparison tiers, muhurtham guidance section, and centered CTA.
-- `booking.html` — Booking request form with reassurance sidebar, samagri guarantee, and ceremony helpline.
-- `about.html` — Mission and Vedic heritage preservation, spiritual advisory council section, 768px centered cards, and centered CTA.
-- `contact.html` — Enquiry form, ceremony helpline, SVG location pin icon, working social hover, and OpenStreetMap embed.
-- `login.html` / `signup.html` — Dedicated authentication pages without navbar, floating top-right Theme & RTL controls, brand name inside card, social media login, SVG eye password toggle, and checkboxes.
+## Navigation Order
+- `index.html` — **Home1**: Main landing page
+- `home2.html` — **Home2**: Alternate search & festival-driven landing page
+- `about.html` — **About**: Mission, Vedic heritage preservation, spiritual advisory council
+- `priests.html` — **Priests**: Certified Vedic Priest Directory with uncropped authentic portraits
+- `poojas.html` — **Poojas**: 9 traditional ceremonies with customized package comparison tiers
+- `contact.html` — **Contact**: Enquiry form, ceremony helpline, SVG location pin icon, and OpenStreetMap
+- `dashboard.html` — **Dashboard**: Devotee Dashboard with interactive tabs for Bookings, Assigned Pandits, Samagri Checklists, and Muhurtham Charts
 
-## Key Features
-- **Dedicated Sacred Diya Favicon**: Vector SVG favicon for high-DPI displays.
-- **Universal Devanagari Brand Logo**: `ॐ PoojaConnect` replacing Tamil script.
-- **Responsive 768px & Mobile Navigation**: Hamburger menu with Theme, RTL, and Sign Up buttons moved cleanly inside the drawer.
-- **Interactive FAQ Accordion**: Expandable Q&A with smooth SVG indicator animations.
-- **4-Column Enhanced Footer**: Social media hover effects and Back to Top scroll control.
-- **Centered Layouts & Device Optimization**: Perfectly centered hero titles, last-card centering on tablet view, and single-line mobile buttons.
+## Key Fixes & Enhancements
+1. **Dedicated Sacred Diya Favicon**: Vector SVG favicon (`assets/favicon.svg`) rendering crisply on all displays.
+2. **Universal Devanagari Brand Logo**: `ॐ PoojaConnect` avoiding Tamil script.
+3. **Fixed Navigation Order**: `Home1 -> Home2 -> About -> Priests -> Poojas -> Contact -> Dashboard`.
+4. **Enhanced Footer**:
+   - Larger, prominent Brand Logo (`1.55rem`).
+   - Clean Back to Top circular icon button `↑` (removed bulky text).
+   - Smooth hover animations on social media icons.
+5. **1024px iPad Pro Navbar Fix**:
+   - Responsive breakpoint adjusted to `1024px` so tablets display the clean mobile drawer menu without breaking or overflowing.
+6. **Last Card Centered at 768px**:
+   - CSS `:last-child:nth-child(odd)` ensures 3rd cards (priests, festivals, features) center cleanly on tablet viewports.
+7. **100% Authentic Vedic Priest Photography**:
+   - Generated and replaced all placeholder/irrelevant portraits with realistic photographs of Indian Hindu pandits wearing traditional tilak, dhoti, sacred thread, scriptures, and conducting havan.
+8. **Interactive Devotee Dashboard**:
+   - Fully functioning tabbed panels for Bookings, Assigned Pandits, Samagri Checklists with checkboxes, Muhurtham Charts, and Family Preferences.
+9. **Authentication Layout Fixes**:
+   - Dedicated non-overlapping header container for RTL and Theme buttons.
+   - Social media buttons moved below the form/submit button.
+   - SVG eye icon toggle for password show/hide.
+10. **Mobile CTA & Card Button Fixes**:
+    - Full width, centered text, and balanced button padding avoiding borders on mobile screens.
