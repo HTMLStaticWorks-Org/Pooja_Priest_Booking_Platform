@@ -11,20 +11,22 @@
 <body>
   <!-- AUTH PAGE WRAPPER WITHOUT NAVBAR -->
   <div class="auth-page-wrap">
-    <!-- DEDICATED AUTH HEADER: NEVER OVERLAPS WITH CARD (Point 11 in Image 5) -->
-    <header class="auth-header">
-      <a class="logo" href="index.html">
-        <span class="logo-mark">ॐ</span>
-        <span>PoojaConnect</span>
-      </a>
-      <div class="auth-top-actions">
-        <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
-        <button class="icon-btn" data-theme-toggle>☾ Theme</button>
-      </div>
-    </header>
+    <!-- THEME AND RTL ON TOP RIGHT (User Strict Requirement) -->
+    <div class="auth-top-actions">
+      <button class="icon-btn" data-rtl-toggle aria-label="Toggle right to left">RTL</button>
+      <button class="icon-btn" data-theme-toggle>☾ Theme</button>
+    </div>
 
     <!-- AUTHENTICATION CARD -->
     <div class="auth-card">
+      <!-- BRAND NAME INSIDE CARD (User Strict Requirement) -->
+      <div class="auth-card-brand">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">ॐ</span>
+          <span>PoojaConnect</span>
+        </a>
+      </div>
+
       <h1>Welcome back</h1>
       <p class="subtitle">Sign in to continue planning your sacred moments.</p>
 

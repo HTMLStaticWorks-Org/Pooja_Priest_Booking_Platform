@@ -13,6 +13,8 @@
   --line: #eadbc9;
   --shadow: 0 16px 45px rgba(93, 53, 25, 0.08);
   --shadow-lg: 0 24px 60px rgba(93, 53, 25, 0.14);
+  --brand-brown: #7a2e16; /* Deep Vedic Brown (Point 1A in Image 1) */
+  --brand-om: #a9432a;    /* Brown Om Mark */
 }
 
 [data-theme="dark"] {
@@ -24,6 +26,8 @@
   --line: #42362d;
   --shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.6);
+  --brand-brown: #d97735; /* Luminous Warm Copper Brown (Point 1A in Image 1) */
+  --brand-om: #e28743;    /* Warm Saffron Brown */
 }
 
 * {
@@ -80,27 +84,30 @@ img {
   gap: 16px;
 }
 
-/* Brand Logo (Point 2: Avoid Tamil, Universal Devanagari ॐ) */
+/* Brand Logo (Point 1A: Brown in BOTH Themes; Point 2: Avoid Tamil, Universal Devanagari ॐ) */
 .logo {
   font-weight: 800;
   font-size: 1.28rem;
-  color: var(--brand);
+  color: var(--brand-brown);
   display: inline-flex;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
   letter-spacing: -0.02em;
+  transition: color 0.25s ease;
 }
 
 .logo-mark {
   font-size: 1.55rem;
-  color: var(--gold);
+  color: var(--brand-om);
   line-height: 1;
   font-family: serif;
+  transition: color 0.25s ease;
 }
 
 .logo span {
-  color: var(--ink);
+  color: var(--brand-brown);
+  transition: color 0.25s ease;
 }
 
 /* Centered Navigation Links */
@@ -1028,6 +1035,11 @@ img {
 .footer .logo {
   font-size: 1.55rem; /* Larger Brand Name (Point 2) */
   font-weight: 800;
+  color: var(--brand-brown);
+}
+
+.footer .logo span {
+  color: var(--brand-brown);
 }
 
 .footer-grid {
@@ -1162,28 +1174,43 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
+  padding: 80px 20px 40px;
+  position: relative;
   background: radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--soft) 50%, var(--bg)), var(--bg));
 }
 
-/* Dedicated Non-Overlapping Auth Header (Fix for Point 11 in Image 5) */
-.auth-header {
-  width: min(480px, 100%);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-  padding: 0 4px;
-}
-
-.auth-header .logo {
-  font-size: 1.3rem;
-}
-
+/* Theme and RTL on Top Right of Authentication Page (User Strict Requirement) */
 .auth-top-actions {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
+  z-index: 20;
+}
+
+[dir="rtl"] .auth-top-actions,
+.rtl .auth-top-actions {
+  right: auto;
+  left: 24px;
+}
+
+/* Brand Name Inside the Authentication Card (User Strict Requirement) */
+.auth-card-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.auth-card-brand .logo {
+  font-size: 1.45rem;
+  color: var(--brand-brown);
+}
+
+.auth-card-brand .logo span {
+  color: var(--brand-brown);
 }
 
 .auth-card {

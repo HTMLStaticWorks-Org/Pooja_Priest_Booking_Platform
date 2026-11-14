@@ -138,6 +138,19 @@
         }
       });
     });
+
+    // Quick switch links within dashboard cards
+    document.querySelectorAll('.dash-quick-tab').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetTab = link.getAttribute('data-tab');
+        const targetBtn = document.querySelector(`.dash-tab-btn[data-tab="${targetTab}"]`);
+        if (targetBtn) {
+          targetBtn.click();
+          targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    });
   }
 
   // Form Submissions in Demo
